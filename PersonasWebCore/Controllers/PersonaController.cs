@@ -93,7 +93,7 @@ namespace PersonasWebCore.Controllers
             }
             catch
             {
-                return View();
+                return View(_personaManager.SearchById(id));
             }
         }
     }
