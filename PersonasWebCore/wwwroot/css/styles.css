@@ -1,0 +1,112 @@
+﻿
+/*--------------------------- ESTILOS PROPIOS--------------------------*/
+.table-responsive-own {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #262626;
+}
+
+    .table-responsive-own caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+    }
+
+    .table-responsive-own td, th {
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        text-align: start;
+    }
+
+html {
+    font-family: 'Roboto';
+}
+
+thead, th, tfoot th {
+    color: rgb(192, 190, 190);
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.table-responsive-own tbody tr {
+    border-bottom: rgb(65, 65, 65) 1px solid;
+}
+
+    .table-responsive-own tbody tr:hover {
+        background-color: #616161;
+    }
+
+@media screen and (max-width: 600px) {
+    .table-responsive-own {
+        border: 0;
+    }
+
+        .table-responsive-own caption {
+            font-size: 1.3em;
+        }
+
+        .table-responsive-own thead {
+            border: none;
+            visibility: collapse;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .table-responsive-own tr {
+            border-bottom: 10px solid rgb(255, 255, 255);
+            display: block;
+            margin-bottom: .625em;
+        }
+
+        .table-responsive-own td {
+            display: block;
+            font-size: .8em;
+            text-align: right;
+        }
+
+            .table-responsive-own td::before {
+                /*
+* aria-label has no advantage, it won't be read inside a .table-responsive-own
+content: attr(aria-label);
+*/
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .table-responsive-own td:last-child {
+                border-bottom: 0;
+            }
+}
+
+.blue-grey--text {
+    color: #64818C
+}
+
+
+
+.button {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+    .button:hover {
+        color: white;
+    }
+
+
+
+
+    
+
+
